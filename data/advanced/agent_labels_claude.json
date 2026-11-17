@@ -1,0 +1,535 @@
+{
+ "dev": {
+  "summary": {
+   "n": 18,
+   "errors": 0,
+   "answerable": 15,
+   "unanswerable": 3,
+   "answered": 6,
+   "grades_count": {
+    "0": 9,
+    "1": 1,
+    "2": 5
+   },
+   "grounded_mean_0_2": 0.733,
+   "pass_answerable": 5,
+   "pass_unanswerable": 3,
+   "pass_total": "8/18",
+   "abstain_correct_unanswerable": "3/3",
+   "answerable_refused": 9,
+   "citations_total": 10,
+   "search_calls_per_query_min_max": [
+    1,
+    1
+   ]
+  },
+  "labels": [
+   {
+    "query_id": "dev-01",
+    "group": "table",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "dev-02",
+    "group": "table",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "dev-03",
+    "group": "table",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "dev-04",
+    "group": "image",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p086-note6"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-05",
+    "group": "image",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p086-note6"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-06",
+    "group": "image",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "dev-07",
+    "group": "chart",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "dev-08",
+    "group": "chart",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "dev-09",
+    "group": "chart",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "dev-10",
+    "group": "multihop",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "dev-11",
+    "group": "multihop",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p068-note2",
+     "thesis-p067-c1"
+    ],
+    "grade_0_1_2": 1,
+    "pass": false
+   },
+   {
+    "query_id": "dev-12",
+    "group": "text",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "dev-13",
+    "group": "text",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p064-c3",
+     "thesis-p065-c1",
+     "thesis-p041-c2",
+     "thesis-p042-c2"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-14",
+    "group": "text",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p067-c2"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-15",
+    "group": "text",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p076-c3"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-16",
+    "group": "unanswerable",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   },
+   {
+    "query_id": "dev-17",
+    "group": "unanswerable",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   },
+   {
+    "query_id": "dev-18",
+    "group": "unanswerable",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   }
+  ]
+ },
+ "test": {
+  "summary": {
+   "n": 30,
+   "errors": 0,
+   "answerable": 24,
+   "unanswerable": 6,
+   "answered": 11,
+   "grades_count": {
+    "0": 13,
+    "1": 1,
+    "2": 10
+   },
+   "grounded_mean_0_2": 0.875,
+   "pass_answerable": 10,
+   "pass_unanswerable": 6,
+   "pass_total": "16/30",
+   "abstain_correct_unanswerable": "6/6",
+   "answerable_refused": 13,
+   "citations_total": 20,
+   "search_calls_per_query_min_max": [
+    1,
+    1
+   ]
+  },
+  "labels": [
+   {
+    "query_id": "test-01",
+    "group": "table",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-02",
+    "group": "table",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-03",
+    "group": "table",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-04",
+    "group": "table",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-05",
+    "group": "table",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p076-c2",
+     "thesis-p077-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-06",
+    "group": "table",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-07",
+    "group": "image",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p073-note3",
+     "thesis-p051-c2"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-08",
+    "group": "image",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-09",
+    "group": "image",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-10",
+    "group": "image",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p086-note6"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-11",
+    "group": "image",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p067-note1",
+     "thesis-p066-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-12",
+    "group": "chart",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-13",
+    "group": "chart",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p082-note5",
+     "thesis-p081-c4"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-14",
+    "group": "chart",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-15",
+    "group": "chart",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p067-note1",
+     "thesis-p066-c2"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-16",
+    "group": "chart",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p087-note7"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-17",
+    "group": "multihop",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-18",
+    "group": "multihop",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-19",
+    "group": "multihop",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-20",
+    "group": "multihop",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p066-c1",
+     "thesis-p067-c1",
+     "thesis-p066-c2"
+    ],
+    "grade_0_1_2": 1,
+    "pass": false
+   },
+   {
+    "query_id": "test-21",
+    "group": "text",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p067-c1",
+     "thesis-p066-c2"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-22",
+    "group": "text",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p076-c3"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-23",
+    "group": "text",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "test-24",
+    "group": "text",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "thesis-p080-c3",
+     "thesis-p083-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-25",
+    "group": "unanswerable",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   },
+   {
+    "query_id": "test-26",
+    "group": "unanswerable",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   },
+   {
+    "query_id": "test-27",
+    "group": "unanswerable",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   },
+   {
+    "query_id": "test-28",
+    "group": "unanswerable",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   },
+   {
+    "query_id": "test-29",
+    "group": "unanswerable",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   },
+   {
+    "query_id": "test-30",
+    "group": "unanswerable",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+Wikipedia text is used under CC BY-SA 4.0.
+License: https://creativecommons.org/licenses/by-sa/4.0/
+Each article link identifies the source and exact revision; article histories identify contributors.
+
+- Information retrieval: https://en.wikipedia.org/wiki/Information_retrieval?oldid=1385708733
+- Search engine: https://en.wikipedia.org/wiki/Search_engine?oldid=1383872781
+- Vector space model: https://en.wikipedia.org/wiki/Vector_space_model?oldid=1381025225
+- Tf–idf: https://en.wikipedia.org/wiki/Tf%E2%80%93idf?oldid=1381781093
+- Okapi BM25: https://en.wikipedia.org/wiki/Okapi_BM25?oldid=1383710681
+- PageRank: https://en.wikipedia.org/wiki/PageRank?oldid=1379164769
+- Learning to rank: https://en.wikipedia.org/wiki/Learning_to_rank?oldid=1384656849
+- Inverted index: https://en.wikipedia.org/wiki/Inverted_index?oldid=1354610034
+- Precision and recall: https://en.wikipedia.org/wiki/Precision_and_recall?oldid=1384589056
+- Mean reciprocal rank: https://en.wikipedia.org/wiki/Mean_reciprocal_rank?oldid=1218582630
+- Discounted cumulative gain: https://en.wikipedia.org/wiki/Discounted_cumulative_gain?oldid=1383184584
+- Relevance feedback: https://en.wikipedia.org/wiki/Relevance_feedback?oldid=1373488309
+- Query expansion: https://en.wikipedia.org/wiki/Query_expansion?oldid=1382375720
+- Natural language processing: https://en.wikipedia.org/wiki/Natural_language_processing?oldid=1383133655
+- Word embedding: https://en.wikipedia.org/wiki/Word_embedding?oldid=1374850731
+- Sentence embedding: https://en.wikipedia.org/wiki/Sentence_embedding?oldid=1380979860
+- Transformer (deep learning): https://en.wikipedia.org/wiki/Transformer_(deep_learning)?oldid=1385760279
+- BERT (language model): https://en.wikipedia.org/wiki/BERT_(language_model)?oldid=1384664467
+- Web crawler: https://en.wikipedia.org/wiki/Web_crawler?oldid=1384529794
+- Semantic search: https://en.wikipedia.org/wiki/Semantic_search?oldid=1382599403
+- Vector database: https://en.wikipedia.org/wiki/Vector_database?oldid=1384354448
+- Retrieval-augmented generation: https://en.wikipedia.org/wiki/Retrieval-augmented_generation?oldid=1385966070
+- Prompt engineering: https://en.wikipedia.org/wiki/Prompt_engineering?oldid=1384874081
+- Information extraction: https://en.wikipedia.org/wiki/Information_extraction?oldid=1384713130
+- Knowledge graph: https://en.wikipedia.org/wiki/Knowledge_graph?oldid=1382603053
+- Cosine similarity: https://en.wikipedia.org/wiki/Cosine_similarity?oldid=1378075969
+- Clustering: https://en.wikipedia.org/wiki/Clustering?oldid=1350417671
+- Document classification: https://en.wikipedia.org/wiki/Document_classification?oldid=1375604814
+- Question answering: https://en.wikipedia.org/wiki/Question_answering?oldid=1380981467
+- Text mining: https://en.wikipedia.org/wiki/Text_mining?oldid=1383253930

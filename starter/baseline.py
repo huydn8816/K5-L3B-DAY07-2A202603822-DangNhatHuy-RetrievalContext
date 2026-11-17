@@ -36,6 +36,13 @@ def validate(chunks, questions):
         ids.add(q['id'])
         if q.get('split') not in ('dev', 'test') or not isinstance(q.get('question'), str) or not q['question'].strip():
             raise ValueError(f"question {q['id']}: split hoặc question không hợp lệ")
+        answerable = q.get('answerable', True)
+        if type(answerable) is not bool:
+            raise ValueError(f"question {q['id']}: answerable phải là boolean")
+        if not answerable:
+            if q.get('expected_behavior') != 'search_and_abstain' or not isinstance(q.get('absence_reason'), str) or not q['absence_reason'].strip():
+                raise ValueError(f"question {q['id']}: câu thiếu evidence cần expected_behavior và absence_reason")
+            continue
         if not isinstance(q.get('expected_answer'), str) or not q['expected_answer'].strip():
             raise ValueError(f"question {q['id']}: expected_answer phải là chuỗi không rỗng")
         if not isinstance(q.get('gold'), list) or not q['gold']:
@@ -80,16 +87,28 @@ def pack_context(results, budget=800):
         if c['id'] in seen:
             continue
         seen.add(c['id'])
-        block = f"[{c['id']} | {c['source']} | page {c['page']}]\n{c['text']}"
-        if len('\n\n'.join(blocks + [block])) <= budget:
-            blocks.append(block)
-            ids.append(c['id'])
+        header = f"[{c['id']} | {c['source']} | page {c['page']}]\n"
+        separator = '\n\n' if blocks else ''
+        available = budget - len('\n\n'.join(blocks)) - len(separator) - len(header)
+        if available < 1:
+            continue
+        text = c['text']
+        if len(text) > available:
+            if available <= 3:
+                continue
+            end = text.rfind(' ', 0, available - 2)
+            end = end if end > 0 else available - 3
+            text = text[:end].rstrip() + '...'
+        blocks.append(header + text)
+        ids.append(c['id'])
     return '\n\n'.join(blocks), ids
 
 
 def evaluate(index, questions, budget=800):
     traces = []
     for q in questions:
+        if q.get('answerable', True) is False:
+            continue
         start = time.perf_counter()
         results = index.search(q['question'], top_k=3)
         context, ids = pack_context(results, budget)
@@ -117,11 +136,14 @@ def main():
     # Do not inspect held-out test evidence during dev work.
     selected = [q for q in questions if q.get('split') == args.split]
     validate(chunks, selected)
+    answerable = [q for q in selected if q.get('answerable', True)]
+    if not answerable:
+        raise ValueError(f"split {args.split} không có câu hỏi có đáp án")
     started = time.perf_counter()
     index = TfidfIndex(chunks)
     index_seconds = time.perf_counter() - started
     traces = evaluate(index, selected)
-    summary = {'strategy': 'tfidf', 'split': args.split, 'n': len(traces),
+    summary = {'strategy': 'tfidf', 'split': args.split, 'n': len(traces), 'N': len(answerable),
                'hit1': sum(t['hit1'] for t in traces), 'hit3': sum(t['hit3'] for t in traces),
                'context_hit': sum(t['context_hit'] for t in traces),
                'avg_context_chars': statistics.mean(t['context_chars'] for t in traces),

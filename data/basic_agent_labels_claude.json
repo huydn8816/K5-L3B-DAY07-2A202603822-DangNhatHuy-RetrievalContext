@@ -1,0 +1,83 @@
+{
+ "test": {
+  "summary": {
+   "n": 7,
+   "errors": 0,
+   "answerable_pass": 5,
+   "answerable": 5,
+   "unanswerable_correct": 2,
+   "unanswerable": 2,
+   "grounded_mean_0_2": 2.0
+  },
+  "labels": [
+   {
+    "query_id": "test-01",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-4059023-p1-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-02",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-43561218-p1-c1",
+     "wiki-43561218-p2-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-03",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-14343887-p1-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-04",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-19542049-p5-c1",
+     "wiki-19542049-p1-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-05",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-26334893-p2-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "test-06",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   },
+   {
+    "query_id": "test-07",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   }
+  ]
+ }
+}

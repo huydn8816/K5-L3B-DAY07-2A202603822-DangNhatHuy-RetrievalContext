@@ -38,6 +38,17 @@ class BaselineTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate(self.chunks, [{**self.q, 'gold': [wrong]}])
 
+    def test_unanswerable_questions_are_validated_but_not_retrieved(self):
+        missing = {
+            'id': 'u1', 'split': 'dev', 'question': 'Which model was used?',
+            'answerable': False, 'expected_behavior': 'search_and_abstain',
+            'absence_reason': 'The corpus does not specify an embedding model.',
+        }
+        validate(self.chunks, [self.q, missing])
+        self.assertEqual(evaluate(TfidfIndex(self.chunks), [self.q, missing])[0]['query_id'], 'q')
+        with self.assertRaises(ValueError):
+            validate(self.chunks, [{**missing, 'absence_reason': ''}])
+
     def test_budget_dedup_and_empty_query(self):
         context, ids = pack_context([self.chunks[0], self.chunks[0]], 800)
         self.assertEqual(ids, ['a'])
@@ -47,6 +58,15 @@ class BaselineTests(unittest.TestCase):
         trace = evaluate(TfidfIndex(self.chunks), [self.q], budget=1)[0]
         self.assertTrue(trace['hit3'])
         self.assertFalse(trace['context_hit'])
+
+    def test_long_chunks_are_excerpted_instead_of_dropped(self):
+        long_chunk = chunk('long', 'Leading context supporting evidence. ' + 'background ' * 100)
+        context, ids = pack_context([long_chunk], budget=120)
+        self.assertEqual(ids, ['long'])
+        self.assertIn('Leading context', context)
+        self.assertIn('supporting evidence.', context)
+        self.assertLessEqual(len(context), 120)
+        self.assertTrue(context.endswith('...'))
 
     def test_convert_day6_and_preserve_filter(self):
         raw_chunk = {'chunk_id': 'c1', 'document_id': 'doc', 'source': 'doc.pdf', 'page': 1,
@@ -68,9 +88,9 @@ class BaselineTests(unittest.TestCase):
             subprocess.run([sys.executable, str(ROOT/'starter/baseline.py'), '--chunks', str(root/'chunks.json'),
                             '--questions', str(root/'q.json'), '--split', 'dev', '--output', str(root/'out')],
                            check=True, capture_output=True, text=True)
-            summary = json.loads((root/'out/summary.json').read_text())
+            summary = json.loads((root/'out/summary.json').read_text(encoding='utf-8'))
             self.assertEqual((summary['split'], summary['n'], summary['hit1']), ('dev', 1, 1))
-            self.assertEqual(len(json.loads((root/'out/traces.json').read_text())), 1)
+            self.assertEqual(len(json.loads((root/'out/traces.json').read_text(encoding='utf-8'))), 1)
 
 
 if __name__ == '__main__': unittest.main()

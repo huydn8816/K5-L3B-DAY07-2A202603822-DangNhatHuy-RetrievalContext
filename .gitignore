@@ -9,3 +9,14 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+data/.wikimedia_cache/
+.cache/
+results/
+
+# Advanced challenge: personal source PDF and page renders (not for submission)
+data/source/
+data/advanced/renders/
+
+# Advanced challenge: full-text dumps of the personal thesis (regenerate with src.build_pdf_corpus)
+data/advanced/pages.json
+data/advanced/chunks.json

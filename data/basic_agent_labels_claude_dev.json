@@ -1,0 +1,202 @@
+{
+ "dev": {
+  "summary": {
+   "n": 17,
+   "errors": 0,
+   "answerable": 15,
+   "answerable_pass": 14,
+   "grades": {
+    "0": 1,
+    "1": 0,
+    "2": 14
+   },
+   "grounded_mean": 1.867,
+   "unanswerable_correct": "2/2",
+   "pass_total": "16/17",
+   "answered": 14,
+   "answered_with_citation": 14,
+   "citations_in_context": "25/25",
+   "answerable_refused": 1,
+   "search_calls": [
+    1
+   ]
+  },
+  "labels": [
+   {
+    "query_id": "dev-01",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-15271-p1-c1",
+     "wiki-15271-p2-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-02",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-15271-p2-c1",
+     "wiki-15271-p9-c2"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-03",
+    "answerable": true,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": 0,
+    "pass": false
+   },
+   {
+    "query_id": "dev-04",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-8966592-p1-c1",
+     "wiki-8966592-p1-c2"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-05",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-11184711-p1-c1",
+     "wiki-11184711-p2-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-06",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-25050663-p1-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-07",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-5818361-p1-c1",
+     "wiki-5818361-p2-c1",
+     "wiki-5818361-p4-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-08",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-7872152-p1-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-09",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-75229858-p1-c1",
+     "wiki-69071767-p20-c1",
+     "wiki-75229858-p3-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-10",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-74020014-p1-c1",
+     "wiki-74020014-p4-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-11",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-58348103-p2-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-12",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-69071767-p1-c1",
+     "wiki-69071767-p5-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-13",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-62026514-p6-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-14",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-61603971-p1-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-15",
+    "answerable": true,
+    "status": "answered",
+    "citations": [
+     "wiki-3125116-p1-c1",
+     "wiki-3125116-p2-c1"
+    ],
+    "grade_0_1_2": 2,
+    "pass": true
+   },
+   {
+    "query_id": "dev-16",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   },
+   {
+    "query_id": "dev-17",
+    "answerable": false,
+    "status": "abstain",
+    "citations": [],
+    "grade_0_1_2": null,
+    "pass": true
+   }
+  ]
+ }
+}
