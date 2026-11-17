@@ -1,0 +1,197 @@
+[
+  {
+    "id": "dev-01",
+    "split": "dev",
+    "answerable": true,
+    "question": "What is information retrieval intended to identify and retrieve?",
+    "expected_answer": "Information system resources relevant to an information need.",
+    "gold": [{"source_id": "wikipedia:15271", "page": 1, "evidence": "identifying and retrieving information system resources that are relevant to an information need"}]
+  },
+  {
+    "id": "dev-02",
+    "split": "dev",
+    "answerable": true,
+    "question": "Why can an information retrieval query return a ranked list instead of one exact result?",
+    "expected_answer": "Several objects may match a query with different degrees of relevance, so systems score and rank them.",
+    "gold": [{"source_id": "wikipedia:15271", "page": 2, "evidence": "several objects may match the query, perhaps with different degrees of relevance"}]
+  },
+  {
+    "id": "dev-03",
+    "split": "dev",
+    "answerable": true,
+    "question": "In the vector-space TF-IDF model, what are document-term weights formed from?",
+    "expected_answer": "Products of local and global parameters.",
+    "gold": [
+      {"source_id": "wikipedia:20948989", "page": 4, "evidence": "term-specific weights in the document vectors are products of local and global parameters"},
+      {"source_id": "wikipedia:2057290", "page": 6, "evidence": "high term frequency (in the given document) and a low document frequency of the term in the whole collection of documents"}
+    ]
+  },
+  {
+    "id": "dev-04",
+    "split": "dev",
+    "answerable": true,
+    "question": "Does cosine similarity depend on vector magnitude or on another property?",
+    "expected_answer": "It depends on the angle between vectors, not their magnitudes.",
+    "gold": [{"source_id": "wikipedia:8966592", "page": 1, "evidence": "does not depend on the magnitudes of the vectors, but only on their angle"}]
+  },
+  {
+    "id": "dev-05",
+    "split": "dev",
+    "answerable": true,
+    "question": "Which result position determines the reciprocal rank for a query?",
+    "expected_answer": "The rank of the first correct answer.",
+    "gold": [{"source_id": "wikipedia:11184711", "page": 1, "evidence": "multiplicative inverse of the rank of the first correct answer"}]
+  },
+  {
+    "id": "dev-06",
+    "split": "dev",
+    "answerable": true,
+    "question": "What does learning to rank apply machine learning to construct?",
+    "expected_answer": "Ranking models for information retrieval and recommender systems.",
+    "gold": [{"source_id": "wikipedia:25050663", "page": 1, "evidence": "in the construction of ranking models for information retrieval and recommender systems"}]
+  },
+  {
+    "id": "dev-07",
+    "split": "dev",
+    "answerable": true,
+    "question": "How does relevance feedback use results from an initial query?",
+    "expected_answer": "It gathers feedback about whether initial results are relevant and uses that information for a new query.",
+    "gold": [{"source_id": "wikipedia:5818361", "page": 1, "evidence": "to gather user feedback, and to use information about whether or not those results are relevant to perform a new query"}]
+  },
+  {
+    "id": "dev-08",
+    "split": "dev",
+    "answerable": true,
+    "question": "What is query expansion, and what is it intended to improve?",
+    "expected_answer": "Reformulating a query to improve retrieval performance.",
+    "gold": [{"source_id": "wikipedia:7872152", "page": 1, "evidence": "reformulating a given query to improve retrieval performance"}]
+  },
+  {
+    "id": "dev-09",
+    "split": "dev",
+    "answerable": true,
+    "question": "How does retrieval-augmented generation provide an LLM with new information?",
+    "expected_answer": "It retrieves information from external data sources and has the LLM refer to specified documents before answering.",
+    "gold": [{"source_id": "wikipedia:75229858", "page": 1, "evidence": "retrieve and incorporate new information from external data sources"}]
+  },
+  {
+    "id": "dev-10",
+    "split": "dev",
+    "answerable": true,
+    "question": "What does a vector database store, and how can it retrieve semantically similar records?",
+    "expected_answer": "It stores and retrieves embeddings in vector space, commonly using approximate nearest-neighbor algorithms.",
+    "gold": [{"source_id": "wikipedia:74020014", "page": 1, "evidence": "typically implement approximate nearest neighbor algorithms"}]
+  },
+  {
+    "id": "dev-11",
+    "split": "dev",
+    "answerable": true,
+    "question": "What is stored for each document chunk in the sentence-embedding indexing example?",
+    "expected_answer": "A tuple containing a document chunk and its embedding.",
+    "gold": [{"source_id": "wikipedia:58348103", "page": 2, "evidence": "storing (document chunk, embedding) tuples"}]
+  },
+  {
+    "id": "dev-12",
+    "split": "dev",
+    "answerable": true,
+    "question": "How does context engineering differ from prompt engineering?",
+    "expected_answer": "Prompt engineering structures natural-language inputs; context engineering manages the wider prompt and non-prompt context supplied to a model.",
+    "gold": [{"source_id": "wikipedia:69071767", "page": 1, "evidence": "Context engineering is the related area of software engineering that focuses on the management of non-prompt and prompt contexts"}]
+  },
+  {
+    "id": "dev-13",
+    "split": "dev",
+    "answerable": true,
+    "question": "Which two objectives are named for training BERT?",
+    "expected_answer": "Masked token prediction and next sentence prediction.",
+    "gold": [{"source_id": "wikipedia:62026514", "page": 1, "evidence": "BERT is trained by masked token prediction and next sentence prediction"}]
+  },
+  {
+    "id": "dev-14",
+    "split": "dev",
+    "answerable": true,
+    "question": "What mechanism is the transformer architecture based on?",
+    "expected_answer": "The multi-head attention mechanism.",
+    "gold": [{"source_id": "wikipedia:61603971", "page": 1, "evidence": "based on the multi-head attention mechanism"}]
+  },
+  {
+    "id": "dev-15",
+    "split": "dev",
+    "answerable": true,
+    "question": "What mapping does an inverted index store, and what search does that enable?",
+    "expected_answer": "It maps terms or content to their locations in documents and enables fast full-text searches.",
+    "gold": [{"source_id": "wikipedia:3125116", "page": 1, "evidence": "The purpose of an inverted index is to allow fast full-text searches"}]
+  },
+  {
+    "id": "dev-16",
+    "split": "dev",
+    "answerable": false,
+    "question": "What exact vector dimension does this corpus's deployed production embedding index use?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The source articles discuss vector embeddings generally but do not document this corpus's production index or its embedding dimension."
+  },
+  {
+    "id": "dev-17",
+    "split": "dev",
+    "answerable": false,
+    "question": "What exact top-k value do the source articles prescribe for sentence-embedding retrieval?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The sentence-embedding article mentions a top-k similarity search but does not prescribe a numeric k."
+  },
+  {
+    "id": "test-01",
+    "split": "test",
+    "answerable": true,
+    "question": "What does a search engine provide in response to a user's query?",
+    "expected_answer": "Links to web pages and other relevant information.",
+    "gold": [{"source_id": "wikipedia:4059023", "page": 1, "evidence": "provides links to web pages and other relevant information on the Web"}]
+  },
+  {
+    "id": "test-02",
+    "split": "test",
+    "answerable": true,
+    "question": "How are words represented by word embeddings, and what does closeness in the vector space suggest?",
+    "expected_answer": "As real-valued vectors; nearby vectors are expected to represent words with similar meanings.",
+    "gold": [{"source_id": "wikipedia:43561218", "page": 1, "evidence": "words that are closer in the vector space are expected to be similar in meaning"}]
+  },
+  {
+    "id": "test-03",
+    "split": "test",
+    "answerable": true,
+    "question": "What fraction does precision measure?",
+    "expected_answer": "The fraction of retrieved instances that are relevant.",
+    "gold": [{"source_id": "wikipedia:14343887", "page": 1, "evidence": "the fraction of relevant instances among the retrieved instances"}]
+  },
+  {
+    "id": "test-04",
+    "split": "test",
+    "answerable": true,
+    "question": "Why is discounted cumulative gain normalized across queries?",
+    "expected_answer": "Search-result lists vary in length, so normalizing by ideal DCG makes results comparable across queries.",
+    "gold": [{"source_id": "wikipedia:19542049", "page": 5, "evidence": "the cumulative gain at each position for a chosen value of p should be normalized across queries"}]
+  },
+  {
+    "id": "test-05",
+    "split": "test",
+    "answerable": true,
+    "question": "What signal does PageRank use to assess a page's importance?",
+    "expected_answer": "The web's hyperlink structure.",
+    "gold": [{"source_id": "wikipedia:15271", "page": 3, "evidence": "using the web's hyperlink structure to assess page importance"}]
+  },
+  {
+    "id": "test-06",
+    "split": "test",
+    "answerable": false,
+    "question": "How many requests per second does the production search system described in these articles process?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The corpus does not describe a single production search system or its request-throughput benchmark."
+  },
+  {
+    "id": "test-07",
+    "split": "test",
+    "answerable": false,
+    "question": "Which exact embedding model and revision were used to create the embeddings discussed in these source articles?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The articles describe embedding methods and applications but do not specify a model and revision used to create this corpus's embeddings."
+  }
+]

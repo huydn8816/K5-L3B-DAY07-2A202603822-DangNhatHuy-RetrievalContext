@@ -32,6 +32,15 @@ class AgentTests(unittest.TestCase):
             c = Controller([{'action':'search','query':'q'}, {'action':'answer','answer':f'7 ngày [{cid}]','citations':[cid]}])
             self.assertEqual(run_agent('q', c, Retriever(rows))['status'], 'abstain')
 
+    def test_explicit_model_abstention_is_not_counted_as_an_answer(self):
+        c = Controller([
+            {'action': 'search', 'query': 'q'},
+            {'action': 'answer', 'answer': 'INSUFFICIENT EVIDENCE [c1]', 'citations': ['c1']},
+        ])
+        result = run_agent('q', c, Retriever([CHUNK]))
+        self.assertEqual(result['status'], 'abstain')
+        self.assertEqual(result['citations'], [])
+
     def test_search_limit_is_enforced(self):
         c = Controller([{'action':'search','query':'one'}, {'action':'search','query':'two'}, {'action':'search','query':'three'}])
         r = Retriever([CHUNK]); result = run_agent('q', c, r, max_searches=2)

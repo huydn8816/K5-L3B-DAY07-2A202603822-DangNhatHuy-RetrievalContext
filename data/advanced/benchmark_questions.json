@@ -1,0 +1,727 @@
+[
+ {
+  "id": "dev-01",
+  "split": "dev",
+  "group": "table",
+  "answerable": true,
+  "question": "Trong Bảng 3.5, kịch bản 1 có bao nhiêu mẫu ở tập huấn luyện (Train)?",
+  "expected_answer": "770",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 76,
+    "evidence": "(770, 165, 165)"
+   }
+  ]
+ },
+ {
+  "id": "dev-02",
+  "split": "dev",
+  "group": "table",
+  "answerable": true,
+  "question": "Với mô hình TimesNet + InceptionBlock V2 và độ dài dự báo 100, số tham số là bao nhiêu?",
+  "expected_answer": "12775",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 83,
+    "evidence": "100 12775 0.0487"
+   }
+  ]
+ },
+ {
+  "id": "dev-03",
+  "split": "dev",
+  "group": "table",
+  "answerable": true,
+  "question": "Trong Bảng 3.8 (kịch bản 1), MSE trung bình của LED2 với TN+IB V2 là bao nhiêu?",
+  "expected_answer": "3.42e4",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 85,
+    "evidence": "3.5e4 3.42e4"
+   }
+  ]
+ },
+ {
+  "id": "dev-04",
+  "split": "dev",
+  "group": "image",
+  "answerable": true,
+  "question": "Trong Hình 3.11, mỗi biểu đồ con có bao nhiêu đường biểu diễn?",
+  "expected_answer": "2 (Prediction và True)",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 86,
+    "evidence": "Đường đỏ là Prediction (dự báo), đường xanh là True (thực tế)"
+   }
+  ]
+ },
+ {
+  "id": "dev-05",
+  "split": "dev",
+  "group": "image",
+  "answerable": true,
+  "question": "Hình 3.11 có bao nhiêu biểu đồ con?",
+  "expected_answer": "6",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 86,
+    "evidence": "Hình 3.11 gồm sáu biểu đồ con (a) đến (f)"
+   }
+  ]
+ },
+ {
+  "id": "dev-06",
+  "split": "dev",
+  "group": "image",
+  "answerable": true,
+  "question": "Trong Hình 3.6, tập Validation của kịch bản 2 kéo dài từ ngày nào đến ngày nào?",
+  "expected_answer": "Từ 08-02-2023 đến 02-06-2023",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 77,
+    "evidence": "Validation 08-02-2023 đến 02-06-2023"
+   }
+  ]
+ },
+ {
+  "id": "dev-07",
+  "split": "dev",
+  "group": "chart",
+  "answerable": true,
+  "question": "Trong Hình 3.10, sản phẩm LED1 có MAPE thấp nhất tại mọi giá trị K không?",
+  "expected_answer": "Có",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 82,
+    "evidence": "LED1 thấp nhất và LED2 cao nhất tại mọi giá trị K"
+   }
+  ]
+ },
+ {
+  "id": "dev-08",
+  "split": "dev",
+  "group": "chart",
+  "answerable": true,
+  "question": "Trong Hình 3.12, trục hoành biểu diễn đại lượng nào?",
+  "expected_answer": "Epochs",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 87,
+    "evidence": "MSE theo Epochs cho V1 đến V6"
+   }
+  ]
+ },
+ {
+  "id": "dev-09",
+  "split": "dev",
+  "group": "chart",
+  "answerable": true,
+  "question": "Trong Hình 3.2(c), số lượng bán ra của LED3 tập trung ở vùng giá trị nào?",
+  "expected_answer": "Vùng giá trị nhỏ gần 0",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 68,
+    "evidence": "Biểu đồ (c) LED3 tập trung ở vùng giá trị nhỏ gần 0"
+   }
+  ]
+ },
+ {
+  "id": "dev-10",
+  "split": "dev",
+  "group": "multihop",
+  "answerable": true,
+  "question": "Kịch bản 2 có bao nhiêu mẫu ở tập Test, và tập Test bắt đầu từ ngày nào?",
+  "expected_answer": "110 mẫu; bắt đầu từ 03-06-2023",
+  "gold_all": [
+   {
+    "source_id": "thesis",
+    "page": 76,
+    "evidence": "(880, 110, 110)"
+   },
+   {
+    "source_id": "thesis",
+    "page": 77,
+    "evidence": "Test 03-06-2023 đến 31-12-2023"
+   }
+  ]
+ },
+ {
+  "id": "dev-11",
+  "split": "dev",
+  "group": "multihop",
+  "answerable": true,
+  "question": "Sản phẩm LED3 thuộc loại sản phẩm nào, và biểu đồ mật độ của LED3 tập trung ở vùng giá trị nào?",
+  "expected_answer": "Bộ đèn LED M26 (loại Bộ đèn M16, M26, M36); vùng giá trị nhỏ gần 0",
+  "gold_all": [
+   {
+    "source_id": "thesis",
+    "page": 65,
+    "evidence": "LED3 Bộ đèn LED M26 1200/40W 6500K Bộ đèn M16, M26, M36"
+   },
+   {
+    "source_id": "thesis",
+    "page": 68,
+    "evidence": "Biểu đồ (c) LED3 tập trung ở vùng giá trị nhỏ gần 0"
+   }
+  ]
+ },
+ {
+  "id": "dev-12",
+  "split": "dev",
+  "group": "text",
+  "answerable": true,
+  "question": "Bảng 3.7 đo những yếu tố hiệu suất nào của các phiên bản Inception Block?",
+  "expected_answer": "Số lượng tham số, bộ nhớ tham số và thời gian chạy",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 82,
+    "evidence": "đối với 3 yếu tố bao gồm: số lượng tham số, bộ nhớ tham số và thời gian chạy"
+   }
+  ]
+ },
+ {
+  "id": "dev-13",
+  "split": "dev",
+  "group": "text",
+  "answerable": true,
+  "question": "Tác giả chuẩn hóa dữ liệu bằng phương pháp nào?",
+  "expected_answer": "Chuẩn hóa Z-score",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 65,
+    "evidence": "theo phương pháp chuẩn hóa Z-score"
+   }
+  ]
+ },
+ {
+  "id": "dev-14",
+  "split": "dev",
+  "group": "text",
+  "answerable": true,
+  "question": "Theo phân tích, LED4 không được ưu chuộng trên thị trường trong giai đoạn nào?",
+  "expected_answer": "Từ năm 2021 đến 2023",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 67,
+    "evidence": "không được ưu chuộng trên thị trường từ năm 2021 đến 2023"
+   }
+  ]
+ },
+ {
+  "id": "dev-15",
+  "split": "dev",
+  "group": "text",
+  "answerable": true,
+  "question": "Số khối TimesBlock được sử dụng trong mô hình TimesNet là bao nhiêu?",
+  "expected_answer": "5",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 76,
+    "evidence": "Số lượng khối TimesBlock sử dụng trong mô hình TimesNet là 5"
+   }
+  ]
+ },
+ {
+  "id": "dev-16",
+  "split": "dev",
+  "group": "unanswerable",
+  "answerable": false,
+  "question": "Tài liệu có báo cáo doanh thu năm 2024 của sản phẩm LED1 không?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Tài liệu không có số liệu doanh thu.",
+  "absence_terms": [
+   "doanh thu"
+  ]
+ },
+ {
+  "id": "dev-17",
+  "split": "dev",
+  "group": "unanswerable",
+  "answerable": false,
+  "question": "Mô hình có dự báo nhu cầu cho sản phẩm LED6 không?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Tài liệu chỉ có LED1 đến LED5.",
+  "absence_terms": [
+   "LED6"
+  ]
+ },
+ {
+  "id": "dev-18",
+  "split": "dev",
+  "group": "unanswerable",
+  "answerable": false,
+  "question": "Thời gian huấn luyện của TimesNet + InceptionBlock V1 là bao nhiêu giây?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Tài liệu không báo cáo thời gian huấn luyện theo giây.",
+  "absence_terms": [
+   "giây"
+  ]
+ },
+ {
+  "id": "test-01",
+  "split": "test",
+  "group": "table",
+  "answerable": true,
+  "question": "Trong Bảng 3.5, tập Validation của kịch bản 1 có bao nhiêu mẫu?",
+  "expected_answer": "165",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 76,
+    "evidence": "(770, 165, 165)"
+   }
+  ]
+ },
+ {
+  "id": "test-02",
+  "split": "test",
+  "group": "table",
+  "answerable": true,
+  "question": "Trong Bảng 3.7, mô hình TimesNet + InceptionBlock V1 với độ dài dự báo 50 có bao nhiêu tham số?",
+  "expected_answer": "7405",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 83,
+    "evidence": "50 7405 0.0289"
+   }
+  ]
+ },
+ {
+  "id": "test-03",
+  "split": "test",
+  "group": "table",
+  "answerable": true,
+  "question": "Trong Bảng 3.8 (kịch bản 1), MAE trung bình của LED1 với TN+IB V3 là bao nhiêu?",
+  "expected_answer": "158.14",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 85,
+    "evidence": "MAE 128.25 186.51 158.14"
+   }
+  ]
+ },
+ {
+  "id": "test-04",
+  "split": "test",
+  "group": "table",
+  "answerable": true,
+  "question": "Theo Bảng 3.1, sản phẩm LED2 thuộc loại sản phẩm nào?",
+  "expected_answer": "Bộ đèn M16, M26, M36",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 65,
+    "evidence": "LED2 Bộ đèn LED M36 1200/40W 6500K Bộ đèn M16, M26, M36"
+   }
+  ]
+ },
+ {
+  "id": "test-05",
+  "split": "test",
+  "group": "table",
+  "answerable": true,
+  "question": "Trong Bảng 3.6, batch size và số epochs là bao nhiêu?",
+  "expected_answer": "Batch size 32, 50 epochs",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 76,
+    "evidence": "MSE 32 50"
+   }
+  ]
+ },
+ {
+  "id": "test-06",
+  "split": "test",
+  "group": "table",
+  "answerable": true,
+  "question": "Trong Bảng 3.8 (kịch bản 1), MAPE trung bình của LED2 với TN+IB V6 là bao nhiêu?",
+  "expected_answer": "14.50",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 85,
+    "evidence": "MAPE 10.20 12.42 11.31 13.51 15.50 14.50 12.33 14.10 13.21"
+   }
+  ]
+ },
+ {
+  "id": "test-07",
+  "split": "test",
+  "group": "image",
+  "answerable": true,
+  "question": "Trong Hình 3.5, có bao nhiêu khối TimesBlock được vẽ nối tiếp?",
+  "expected_answer": "3",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 73,
+    "evidence": "Hình 3.5 là sơ đồ mô tả thuật toán, có ba khối TimesBlock"
+   }
+  ]
+ },
+ {
+  "id": "test-08",
+  "split": "test",
+  "group": "image",
+  "answerable": true,
+  "question": "Trong Hình 3.6, kịch bản 1 chia dữ liệu theo tỷ lệ nào?",
+  "expected_answer": "70%:15%:15%",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 77,
+    "evidence": "Kịch bản 1 (70%:15%:15%)"
+   }
+  ]
+ },
+ {
+  "id": "test-09",
+  "split": "test",
+  "group": "image",
+  "answerable": true,
+  "question": "Trong Hình 3.6, tập Test của kịch bản 2 kết thúc vào ngày nào?",
+  "expected_answer": "31-12-2023",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 77,
+    "evidence": "Test 03-06-2023 đến 31-12-2023"
+   }
+  ]
+ },
+ {
+  "id": "test-10",
+  "split": "test",
+  "group": "image",
+  "answerable": true,
+  "question": "Trong Hình 3.11, đường màu đỏ biểu diễn đại lượng nào?",
+  "expected_answer": "Dự báo (Prediction)",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 86,
+    "evidence": "Đường đỏ là Prediction (dự báo)"
+   }
+  ]
+ },
+ {
+  "id": "test-11",
+  "split": "test",
+  "group": "image",
+  "answerable": true,
+  "question": "Trong Hình 3.1(a), các điểm ngoại lai của biểu đồ hộp nằm ở phía nào của hộp?",
+  "expected_answer": "Phía trên hộp",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 67,
+    "evidence": "các điểm ngoại lai nằm phía trên hộp"
+   }
+  ]
+ },
+ {
+  "id": "test-12",
+  "split": "test",
+  "group": "chart",
+  "answerable": true,
+  "question": "Trong Hình 3.10, ở K = 5 sản phẩm nào có MAPE thấp nhất?",
+  "expected_answer": "LED1",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 82,
+    "evidence": "LED1 thấp nhất và LED2 cao nhất tại mọi giá trị K"
+   }
+  ]
+ },
+ {
+  "id": "test-13",
+  "split": "test",
+  "group": "chart",
+  "answerable": true,
+  "question": "Trong Hình 3.10, MAPE của LED2 có giảm khi K tăng từ 1 đến 5 không?",
+  "expected_answer": "Có, giảm khi K tăng",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 82,
+    "evidence": "Cả ba đường đều giảm khi K tăng"
+   }
+  ]
+ },
+ {
+  "id": "test-14",
+  "split": "test",
+  "group": "chart",
+  "answerable": true,
+  "question": "Trong Hình 3.2(d), số lượng bán ra của LED4 tập trung ở khoảng giá trị nào?",
+  "expected_answer": "Gần 0",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 68,
+    "evidence": "Biểu đồ (d) LED4 gần như toàn bộ giá trị tập trung gần 0"
+   }
+  ]
+ },
+ {
+  "id": "test-15",
+  "split": "test",
+  "group": "chart",
+  "answerable": true,
+  "question": "Trong Hình 3.1(b), các điểm bất thường được đánh dấu bằng màu gì?",
+  "expected_answer": "Đỏ",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 67,
+    "evidence": "các điểm bất thường được đánh dấu bằng chấm màu đỏ"
+   }
+  ]
+ },
+ {
+  "id": "test-16",
+  "split": "test",
+  "group": "chart",
+  "answerable": true,
+  "question": "Trong Hình 3.12, đường biểu diễn tập Train có màu gì?",
+  "expected_answer": "Xanh dương",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 87,
+    "evidence": "Đường xanh dương là Train"
+   }
+  ]
+ },
+ {
+  "id": "test-17",
+  "split": "test",
+  "group": "multihop",
+  "answerable": true,
+  "question": "Kịch bản 1 có bao nhiêu mẫu ở tập Train và được chia theo tỷ lệ nào?",
+  "expected_answer": "770 mẫu; 70%:15%:15%",
+  "gold_all": [
+   {
+    "source_id": "thesis",
+    "page": 76,
+    "evidence": "(770, 165, 165)"
+   },
+   {
+    "source_id": "thesis",
+    "page": 77,
+    "evidence": "Kịch bản 1 (70%:15%:15%)"
+   }
+  ]
+ },
+ {
+  "id": "test-18",
+  "split": "test",
+  "group": "multihop",
+  "answerable": true,
+  "question": "Giá trị K được chọn là bao nhiêu, và LED1 có MAPE xấp xỉ bao nhiêu tại K đó?",
+  "expected_answer": "K = 5; LED1 khoảng 11.3",
+  "gold_all": [
+   {
+    "source_id": "thesis",
+    "page": 76,
+    "evidence": "tham số K = 5 là lựa chọn"
+   },
+   {
+    "source_id": "thesis",
+    "page": 82,
+    "evidence": "Ở K = 5: LED1 khoảng 11.3"
+   }
+  ]
+ },
+ {
+  "id": "test-19",
+  "split": "test",
+  "group": "multihop",
+  "answerable": true,
+  "question": "Với TimesNet + InceptionBlock V3, số tham số ở độ dài dự báo 100 là bao nhiêu, và MAE trung bình của LED1 là bao nhiêu?",
+  "expected_answer": "13015 tham số; MAE trung bình LED1 là 158.14",
+  "gold_all": [
+   {
+    "source_id": "thesis",
+    "page": 83,
+    "evidence": "100 13015 0.0507"
+   },
+   {
+    "source_id": "thesis",
+    "page": 85,
+    "evidence": "MAE 128.25 186.51 158.14"
+   }
+  ]
+ },
+ {
+  "id": "test-20",
+  "split": "test",
+  "group": "multihop",
+  "answerable": true,
+  "question": "Sản phẩm LED1 là loại sản phẩm nào, và có bao nhiêu điểm bất thường trong tổng số điểm dữ liệu của nó?",
+  "expected_answer": "Bóng LED Bulb trụ; 72 điểm bất thường trên 1078 điểm",
+  "gold_all": [
+   {
+    "source_id": "thesis",
+    "page": 65,
+    "evidence": "LED1 Bóng LED Bulb TR100N1/30W E27 6500K SS LED Bulb Trụ"
+   },
+   {
+    "source_id": "thesis",
+    "page": 67,
+    "evidence": "Xác định 72 điểm bất thường của bộ dữ liệu trong tổng số 1078 điểm"
+   }
+  ]
+ },
+ {
+  "id": "test-21",
+  "split": "test",
+  "group": "text",
+  "answerable": true,
+  "question": "Trong tổng số 1078 điểm dữ liệu của LED1, có bao nhiêu điểm được xác định là bất thường?",
+  "expected_answer": "72",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 67,
+    "evidence": "Xác định 72 điểm bất thường của bộ dữ liệu trong tổng số 1078 điểm"
+   }
+  ]
+ },
+ {
+  "id": "test-22",
+  "split": "test",
+  "group": "text",
+  "answerable": true,
+  "question": "Learning rate khởi tạo và hàm mất mát được dùng trong huấn luyện là gì?",
+  "expected_answer": "Learning rate 10^-4; hàm mất mát MSE",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 76,
+    "evidence": "learning rate khởi tạo là 10−4 và hàm mất mát MSE"
+   }
+  ]
+ },
+ {
+  "id": "test-23",
+  "split": "test",
+  "group": "text",
+  "answerable": true,
+  "question": "Dữ liệu được sắp xếp theo tiêu chí nào trước khi chia thành tập huấn luyện và kiểm tra?",
+  "expected_answer": "Theo ngày tháng năm, không ngẫu nhiên",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 65,
+    "evidence": "được sắp xếp theo ngày tháng năm lần lượt chứ không hề ngẫu nhiên"
+   }
+  ]
+ },
+ {
+  "id": "test-24",
+  "split": "test",
+  "group": "text",
+  "answerable": true,
+  "question": "Ngoài độ chính xác, tiêu chí nào được dùng để đánh giá các phiên bản Inception Block?",
+  "expected_answer": "Độ phức tạp tính toán",
+  "gold": [
+   {
+    "source_id": "thesis",
+    "page": 82,
+    "evidence": "Độ phức tạp tính toán là một trong những tiêu chí đánh giá cần thiết"
+   }
+  ]
+ },
+ {
+  "id": "test-25",
+  "split": "test",
+  "group": "unanswerable",
+  "answerable": false,
+  "question": "Nhà máy sản xuất các bóng đèn LED nằm ở đâu?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Tài liệu không nêu địa điểm nhà máy.",
+  "absence_terms": [
+   "nhà máy"
+  ]
+ },
+ {
+  "id": "test-26",
+  "split": "test",
+  "group": "unanswerable",
+  "answerable": false,
+  "question": "Mô hình được cài đặt bằng TensorFlow hay Keras?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Tài liệu không nêu TensorFlow hoặc Keras.",
+  "absence_terms": [
+   "TensorFlow",
+   "Keras"
+  ]
+ },
+ {
+  "id": "test-27",
+  "split": "test",
+  "group": "unanswerable",
+  "answerable": false,
+  "question": "Sản lượng sản xuất của LED5 trong năm 2024 là bao nhiêu?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Tài liệu không có sản lượng sản xuất của LED5.",
+  "absence_terms": [
+   "sản lượng sản xuất"
+  ]
+ },
+ {
+  "id": "test-28",
+  "split": "test",
+  "group": "unanswerable",
+  "answerable": false,
+  "question": "Mô hình được huấn luyện trên đám mây (cloud) nào?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Tài liệu không nêu nền tảng đám mây.",
+  "absence_terms": [
+   "đám mây",
+   "cloud"
+  ]
+ },
+ {
+  "id": "test-29",
+  "split": "test",
+  "group": "unanswerable",
+  "answerable": false,
+  "question": "Mô hình có dự báo bằng dữ liệu thời tiết của khu vực không?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Tài liệu không dùng dữ liệu thời tiết trong thực nghiệm.",
+  "absence_terms": [
+   "dữ liệu thời tiết"
+  ]
+ },
+ {
+  "id": "test-30",
+  "split": "test",
+  "group": "unanswerable",
+  "answerable": false,
+  "question": "Chi phí bản quyền phần mềm để huấn luyện mô hình là bao nhiêu?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Tài liệu không nêu chi phí bản quyền phần mềm.",
+  "absence_terms": [
+   "bản quyền"
+  ]
+ }
+]
